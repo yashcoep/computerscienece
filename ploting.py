@@ -2,11 +2,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the feature-engineered data
-feature_engineered_data = pd.read_csv('feature_engineered_data.csv')
+feature_engineered_data = pd.read_csv('feature_engineered_data_constrastive_sentiment.csv')
 
 # Visualize sentiment distributions
 plt.figure(figsize=(8, 6))
-feature_engineered_data['Sentiment Label'].value_counts().plot(kind='bar', color=['green', 'red', 'blue'])
+feature_engineered_data['Sentiment Label'].value_counts().plot(kind='bar', color=['green', 'yellow' ,'red', 'blue', 'purple'])
 plt.title('Sentiment Distribution')
 plt.xlabel('Sentiment')
 plt.ylabel('Count')
